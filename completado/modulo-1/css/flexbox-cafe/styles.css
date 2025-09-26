@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+header {
+  background-color: black;
+  display: flex;
+  position: fixed;
+  width: 100vw;
+}
+
+figure {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+  color: burlywood;
+}
+
+nav {
+  /* background-color: brown; */
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav a {
+  color: burlywood;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: rgb(255, 177, 74);
+  cursor: pointer;
+}
+
+#usuario {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#usuario button {
+  width: 40%;
+  height: 65%;
+  border-color: burlywood;
+  border-radius: 5px;
+  background-color: transparent;
+  color: burlywood;
+}
+
+#usuario button:hover {
+  background-color: rgb(229, 161, 72);
+  border-color: rgb(229, 161, 72);
+  color: white;
+  cursor: pointer;
+}
+
+/* main */
+main {
+  /* background-color: rgb(69, 29, 107); */
+  background-image: url(./assets/hand-drawn-coffee-concept-background-free-vector.jpg);
+  background-size: contain;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.box {
+  width: 40%;
+  height: 80vh;
+  padding: 0 5px;
+  /* border: 1px solid burlywood; */
+  /* background-color: white; */
+  margin: 10px;
+}
+
+/* box1 */
+.texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.texto article {
+  width: 90%;
+  height: 20vh;
+  background-color: rgba(10, 10, 10, 0.38);
+  color: white;
+  border: 3px solid burlywood;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  padding: 10px;
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+h3 {
+  text-align: center;
+  font-size: 50px;
+  color: burlywood;
+}
+
+.texto p {
+  padding: 2px auto;
+  text-align: center;
+  font-family: cursive;
+}
+
+/* box2 */
+.imagen {
+  padding-top: 11px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.imagen img {
+  border-radius: 5px;
+  border: 3px solid rgb(246, 198, 24);
+}
+
+/* footer */
+footer {
+  max-height: 44vh;
+  background-color: black;
+  padding: 30px;
+  border-top: 2px solid burlywood;
+}
+
+.footcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.footcontainer h3 {
+  color: burlywood;
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
+.footcontainer ul {
+  color: rgb(163, 152, 152);
+  list-style: none;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footcontainer ul li {
+  padding: 10px 0;
+}
+
+.footcontainer ul li:hover {
+  color: rgb(255, 177, 74);
+  cursor: pointer;
+}
+
+.footcontainer2 {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 2px solid burlywood;
+}
+
+.footcontainer2 button {
+  background-color: burlywood;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.footcontainer2 button:hover {
+  background-color: rgb(250, 154, 29);
+}

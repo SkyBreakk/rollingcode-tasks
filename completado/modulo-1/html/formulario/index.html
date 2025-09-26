@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Formulario</title>
+    <meta name="author" content="Samuel Fernández" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, nofollow" />
+    <meta name="description" content="Formulario" />
+    <meta name="robots" content="index, nofollow" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section>
+        <form>
+          <!-- Nombre -->
+          <div>
+            <label for="nombre">Nombre:</label><br />
+            <input
+              type="text"
+              id="nombre"
+              name="given-name"
+              required
+              autocomplete="given-name"
+            />
+          </div>
+          <!-- Apellido -->
+          <div>
+            <label for="apellido">Apellido:</label><br />
+            <input
+              type="text"
+              id="appelido"
+              name="family-name"
+              required
+              autocomplete="family-name"
+            />
+          </div>
+          <!-- correo -->
+          <div>
+            <label for="correo">Correo:</label><br />
+            <input
+              type="email"
+              id="correo"
+              name="email"
+              required
+              autocomplete="email"
+            />
+          </div>
+          <!-- contraseña -->
+          <div>
+            <label for="contraseña">Contraseña:</label><br />
+            <input type="password" id="contraseña" name="password" required />
+          </div>
+          <!-- repetir contraseña -->
+          <div>
+            <label for="repetir">Repetir Contraseña:</label><br />
+            <input
+              type="password"
+              id="repetir"
+              name="repeat-password"
+              required
+            />
+          </div>
+          <!-- cumpleaños -->
+          <div>
+            <label for="fecha-de-nacimiento">Fecha de Nacimiento:</label><br />
+            <input
+              type="date"
+              id="fecha-de-nacimiento"
+              name="birth-date"
+              required
+              autocomplete="bday"
+              min="1900-01-01"
+              max="2007-12-31"
+            />
+          </div>
+          <!-- genero -->
+          <div>
+            <fieldset>
+              <legend>Género:</legend>
+              <label>
+                <input
+                  type="radio"
+                  name="gender"
+                  id="masculino"
+                  value="masculino"
+                />
+                Masculino
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="gender"
+                  id="femenino"
+                  value="femenino"
+                />
+                Femenino
+              </label>
+              <label>
+                <input type="radio" name="gender" id="otro" value="otro" />
+                Otro
+              </label>
+            </fieldset>
+          </div>
+          <br />
+          <!-- estudios -->
+          <div>
+            <label for="estudios">Estudios Cursados</label><br />
+            <select name="studies" id="estudios">
+              <option>Arquitectura</option>
+              <option>Biología</option>
+              <option>Derecho</option>
+              <option>Economía</option>
+              <option>Filosofía</option>
+              <option>Medicina</option>
+              <option>Programación</option>
+              <option>Psicología</option>
+              <option>Química</option>
+            </select>
+          </div>
+          <!-- profesion -->
+          <div>
+            <label for="profesion">Profesión</label><br />
+            <input
+              list="countries"
+              placeholder="Inserte su Profesión"
+              required
+              autocomplete="work"
+            />
+            <datalist id="countries">
+              <option>Arquitecto</option>
+              <option>Biólogo</option>
+              <option>Abogado</option>
+              <option>Contador</option>
+              <option>Filósofo</option>
+              <option>Farmacéutico</option>
+              <option>Programador</option>
+              <option>Psicólogo</option>
+              <option>Ingeniero Químico</option>
+            </datalist>
+          </div>
+          <br />
+          <!-- foto -->
+          <div>
+            <label for="foto">Foto de Perfil</label><br />
+            <input type="file" name="perfil-photo" id="foto" required />
+          </div>
+          <!-- terminos -->
+          <div>
+            <label for="terminos">Términos y Condiciones</label><br />
+            <textarea name="terms" id="terminos" cols="50" rows="10" readonly>
+              1. Aceptación de los Términos:
+              Al acceder y utilizar este sitio web, usted acepta estar sujeto a los presentes Términos y Condiciones. Si no está de acuerdo con estos términos, no debe usar el sitio web. 
+              Estos Términos y Condiciones constituyen un acuerdo legalmente vinculante entre usted y [Nombre del Sitio Web]. 
+
+              2. Propiedad Intelectual:
+              Todo el contenido, incluyendo textos, imágenes, gráficos, videos y software, en este sitio web es propiedad de [Nombre del Sitio Web] o de sus licenciantes. 
+              Usted no tiene derecho a copiar, reproducir, distribuir, modificar o crear obras derivadas de los contenidos de este sitio web sin la autorización expresa de [Nombre del Sitio Web]. 
+
+              3. Uso del Sitio Web:
+              Usted se compromete a utilizar este sitio web de acuerdo con la ley y de manera que no interfiera con el uso del sitio por parte de otros usuarios.
+              No se permite el uso de este sitio web para fines ilícitos o para actividades que puedan ser dañinas para otros usuarios o para el sitio web mismo. 
+
+              4. Responsabilidad:
+              [Nombre del Sitio Web] no se hace responsable por cualquier daño o pérdida que pueda resultar del uso de este sitio web.
+              Usted es responsable de cualquier daño o pérdida que pueda causar al sitio web o a otros usuarios. 
+
+              5. Políticas de Privacidad:
+              [Nombre del Sitio Web] recopila y utiliza información personal de acuerdo con su Política de Privacidad, que se puede encontrar en [enlace a la Política de Privacidad].
+              Al utilizar este sitio web, usted acepta la recopilación y uso de su información personal de acuerdo con la Política de Privacidad. 
+
+              6. Devoluciones y Reembolsos:
+              [Nombre del Sitio Web] se reserva el derecho de cancelar cualquier transacción si sospecha de actividad fraudulenta o si hay errores en los precios. 
+              Para cualquier devolución o reembolso, se deben seguir las políticas especificadas en [enlace a la política de devoluciones y reembolsos]. 
+
+              7. Pago:
+              Los precios de los productos o servicios ofrecidos en este sitio web están sujetos a cambio sin previo aviso.
+              Usted es responsable de cualquier cargo que pueda surgir del uso de este sitio web. 
+
+              8. Ley Aplicable:
+              Estos Términos y Condiciones se regirán por la ley de [Jurisdicción].
+              Cualquier disputa que surja de estos Términos y Condiciones se resolverá en [Jurisdicción]. 
+
+              9. Modificación de los Términos y Condiciones:
+              [Nombre del Sitio Web] se reserva el derecho de modificar estos Términos y Condiciones en cualquier momento.
+              El uso continuado de este sitio web después de la modificación de los Términos y Condiciones constituye su aceptación de los términos modificados. 
+            </textarea>
+          </div>
+          <!-- aceptar terminos -->
+          <div>
+            <input type="checkbox" name="accept" id="aceptar" required />
+            <label for="aceptar">Aceptar Términos y Condiciones</label>
+          </div>
+          <br />
+          <!-- botones -->
+          <input type="button" value="Enviar" />
+          <input type="reset" value="Limpiar" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Anderson Robotics / Samuel Fernández</p>
+    </footer>
+  </body>
+</html>

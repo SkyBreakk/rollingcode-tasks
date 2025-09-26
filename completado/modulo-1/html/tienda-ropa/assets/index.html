@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!--inica la versión de html-->
+<!-- es necesario establecer esto al comienzo de un file html -->
+
+<html lang="es">
+  <!-- a partir de aquí es la página web -->
+  <head>
+    <!-- todo los datos de configuarción de la página web -->
+    <title>Mi primer CV</title>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Mi primer CV"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Samuel Fernández"/>
+    <meta name="robots" content="inedx, follow"/>
+    <link rel="shortcut icon" href="./assets/coin.ico" type="image/x-icon">
+  </head>
+
+  <body>
+    <!-- va todo lo que el usuario va a ver en mi página -->
+    <header>
+      <!-- barra de navegación, logo -->
+    </header>
+
+    <main>
+      <!-- mockup
+      wireframe
+
+      va todo lo que el usuario va a ver en mi página -->
+      <section>
+         <!-- Nombre completo
+          foto
+          título profesional -->
+        <h1>Samuel Efrain Fernández Medina</h1>
+        <img 
+        src="./assets/foto.png" 
+        alt="Foto"
+        width="500"
+        />
+        <p>Diseñador de Páginas Web</p>
+      </section>
+
+      <hr/> <!-- Dibuja una linea horizontal -->
+
+      <section>
+        <h2>Contacto</h2>
+        <!-- <ol> Lista ordenada
+           <li>Email:</li>
+           <li>Teléfono:</li>
+           <li>Ciudad:</li>
+        </ol> -->
+        <ul> <!-- lista NO ordenada -->
+          <li>Email: samu.fm05@gmail.com</li>
+          <li>Teléfono: <a href="https://www.wa.me/3815249969">381 524-9969</a></li>
+          <li>Ciudad: <a href="https://maps.app.goo.gl/3amKeWZjMNaWnMSg8" target="_blank">Tucumán, Alderetes</a></li>
+        </ul>
+
+        <div>
+          <!-- <a href="https://www.youtube.com">hola mundo</a> -->
+          <a href="https://www.linkedin.com" target="_blank">
+            <img src="./assets/linkedin.png" alt="Linkedin" width="50">
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img src="./assets/instagram.png" alt="Instagram" width="50">
+          </a>
+          <a href="https://www.x.com" target="_blank">
+            <img src="./assets/x.png" alt="X/Twitter" width="50">
+          </a>
+          <a href="https://bsky.app" target="_blank">
+            <img src="./assets/bluesky.png" alt="bluesky" width="50">
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <hr/>
+
+    <footer>
+      <!-- pie de la página -->
+      <form>
+        <p><h3>Contactar con el dueño de esta página</h3></p>
+        <p>
+          <label>Nombre</label><br>
+          <input type="text" name="Nombre" id="Nombre" maxlength="20">
+        </p>
+        <p>
+          <label>Apellido</label><br>
+          <input type="text" name="Apellido" id="Apellido" maxlength="20">
+        </p>
+        <p>
+          <label>Correo</label><br>
+          <input type="email" name="" placeholder="ej. nombre@email.com">
+        </p>
+        <p>
+          <label>Mensaje</label><br>
+          <input type="text" name="Mensaje" size="100"/>
+        </p>
+        <button><strong>Enviar</strong></button>
+      </form>
+  </body>
+</html>

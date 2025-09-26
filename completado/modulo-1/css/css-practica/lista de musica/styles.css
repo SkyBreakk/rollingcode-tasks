@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-image: url(./assets/music.png);
+  background-repeat: no-repeat;
+  background-size: 2000px;
+  background-position: center down;
+  font-family: "Courier New", Courier, monospace;
+}
+
+ul {
+  list-style: url(./assets/icons8-right-color-16.png);
+  list-style-position: inside;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(13, 135, 139);
+}
+
+a:hover {
+  color: rgb(99, 238, 243);
+}
+
+.header-title {
+  background-color: rgba(255, 219, 12, 0.774);
+  text-align: center;
+  width: 50%;
+  margin: 20px auto;
+}
+
+/* listas */
+.list-box {
+  text-align: center;
+  margin: 1rem;
+}
+
+.music-list {
+  border: 2px solid black;
+  border-radius: 20px;
+  text-align: center;
+  width: 40%;
+  min-height: 200px;
+  display: inline-block;
+  margin: 2rem 2rem;
+}
+
+.music-list header {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: rgb(221, 191, 21);
+}
+
+.music-list main {
+  background-color: rgba(255, 166, 0, 0.699);
+  font-size: 1.5rem;
+}
+
+.music-list footer {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: rgb(221, 191, 21);
+  font-size: 1.5rem;
+}
+
+/* redes/footer */
+
+.footer-redes {
+  background-color: rgba(255, 219, 12, 0.774);
+  text-align: center;
+  width: 50%;
+  margin: 20px auto;
+}

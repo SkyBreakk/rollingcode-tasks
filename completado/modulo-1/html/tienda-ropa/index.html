@@ -1,0 +1,201 @@
+<!-- Crear una TIENDA DE ROPA (real o ficticia)
+:compass: Index (Página principal)
+Menú con navegación a las otras páginas
+Nombre de la tienda
+Imagen de portada o banner principal
+Breve descripción de la tienda
+:telephone_receiver: Contacto
+ Incluí datos reales o inventados como:
+WhatsApp (usando :point_right: https://wa.me/)
+Mapa de Google Maps (usando iframe)
+:shopping_bags: Productos
+ Por cada producto incluir:
+Imagen del producto
+Título + descripción
+Precio
+Botón para “Agregar al carrito” (simulado)
+(Opcional) Usar <details> para más información
+:test_tube: Opcionales (¡Suman puntos extra!)
+Subir el proyecto a un hosting como Netlify
+Usar una tabla HTML para mostrar equivalencias de talles
+Incluir dos ubicaciones en Google Maps (ej: sucursal centro y sucursal norte)
+Agregar un formulario para recibir mails/novedades
+Crear una página de inicio de sesión con campos de email y contraseña -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>La Rivadavia</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Tienda de ropa ficticia" />
+    <meta name="author" content="Samuel Fernández" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons8-shirt-96.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        Inicio /
+        <a href="./pages/hombres.html">Hombres</a> /
+        <a href="./pages/mujeres.html">Mujeres</a> /
+        <a href="./pages/niños.html">Niños</a> /
+        <a href="./pages/login.html">Iniciar Sesión</a>
+      </nav>
+      <hr />
+      <h1>Tienda de Ropa La Rivadavia</h1>
+      <figure>
+        <img src="./assets/portada.png" alt="Foto de Portada" width="800" />
+        <figcaption>
+          <i
+            >La tienda en el que puedes encontrar las prendas de mayor calidad
+            al mínimo precio.</i
+          >
+        </figcaption>
+      </figure>
+      <hr />
+    </header>
+    <main>
+      <section>
+        <h2>Productos Destacados</h2>
+        <article>
+          <header><h3>Playera Polo Regular Fit</h3></header>
+          <figure>
+            <img src="./assets/shirt1.png" alt="Playera Polo" width="300" />
+          </figure>
+        </article>
+        <article>
+          <header><h3>Vestido con Lazos</h3></header>
+          <figure>
+            <img
+              src="./assets/vestido1.png"
+              alt="Vestido con Lazos"
+              width="300"
+            />
+          </figure>
+        </article>
+        <article>
+          <header><h3>3-Pack de Pañaleros Acanalado</h3></header>
+          <figure>
+            <img src="./assets/pañalera.png" alt="Pañalera" width="300" />
+          </figure>
+        </article>
+      </section>
+      <hr />
+      <section>
+        <h2>Equivalencias de Tallas</h2>
+        <table border="1" cellpadding="10" cellspacing="5">
+          <thead>
+            <tr>
+              <th>Tamaño</th>
+              <th>Medida</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>XS</th>
+              <th>34-36</th>
+            </tr>
+            <tr>
+              <th>S</th>
+              <th>38-40</th>
+            </tr>
+            <tr>
+              <th>M</th>
+              <th>42-44</th>
+            </tr>
+            <tr>
+              <th>L</th>
+              <th>44-46</th>
+            </tr>
+            <tr>
+              <th>XL</th>
+              <th>48-50</th>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <hr />
+      <section>
+        <h2>Contacto</h2>
+        <address>
+          larivadavia@email.com <br />
+          <a href="https://www.wa.me/3815249969">+54 9 381-XXXXXXX</a> <br />
+          <div>
+            <!-- <a href="https://www.youtube.com">hola mundo</a> -->
+            <a href="https://www.linkedin.com" target="_blank">
+              <img src="./assets/linkedin.png" alt="Linkedin" width="50" />
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+              <img src="./assets/instagram.png" alt="Instagram" width="50" />
+            </a>
+            <a href="https://www.x.com" target="_blank">
+              <img src="./assets/x.png" alt="X/Twitter" width="50" />
+            </a>
+            <a href="https://bsky.app" target="_blank">
+              <img src="./assets/bluesky.png" alt="bluesky" width="50" />
+            </a>
+          </div>
+        </address>
+        <hr />
+        <h2>Localidades</h2>
+        <h3>Sucursal Este</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10071.567884878748!2d-65.14844286682421!3d-26.81331909189258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225ed72275f7e1%3A0x961c542639f7e40b!2sAv.%20Rivadavia%2C%20T4178%2C%20Tucum%C3%A1n!5e0!3m2!1sen!2sar!4v1749001604473!5m2!1sen!2sar"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <h3>Sucursal Oeste</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14657.97529967072!2d-65.20126609618238!3d-26.83445492146075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c03cfce565b%3A0xbaf7ad484c6e232f!2sEstacion%20Central%20San%20Miguel%20De%20Tucuman!5e0!3m2!1sen!2sar!4v1749001976831!5m2!1sen!2sar"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+      <hr />
+    </main>
+    <footer>
+      <h2>Únete a nuestro Newsletter!</h2>
+      <p>
+        Subscríbete para recibir notícias sobre nuevos productos antes que
+        nadie.
+      </p>
+      <form>
+        <div>
+          <label for="nombre">Nombre</label><br />
+          <input
+            type="text"
+            name="name"
+            id="nombre"
+            required
+            autocomplete="name"
+          />
+        </div>
+        <div>
+          <label for="correo">Correo</label><br />
+          <input
+            type="email"
+            name="email"
+            id="correo"
+            required
+            autocomplete="email"
+          />
+        </div>
+        <br />
+        <input type="button" value="Subscribirse" />
+      </form>
+    </footer>
+  </body>
+</html>

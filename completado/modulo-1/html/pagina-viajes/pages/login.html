@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Iniciar Sesión</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Práctica de HTML" />
+    <meta name="author" content="Samuel Fernández" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <link rel="shortcut icon" href="../assets/plane.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section>
+        <a href="./register.html">¿No tiene una cuenta?</a><br />
+        <h1>Iniciar Sesión</h1>
+        <form>
+          <fieldset>
+            <div>
+              <label for="correo">Correo</label><br />
+              <input
+                type="email"
+                name="email"
+                id="correo"
+                required
+                autocomplete="email"
+                placeholder="ej. nombre@mail.com"
+              />
+            </div>
+            <br />
+            <div>
+              <label for="contraseña">Contraseña</label><br />
+              <input
+                type="password"
+                name="password"
+                id="contraseña"
+                required
+              /><br />
+              <a href="./recovery.html">¿Olvidó su contraseña?</a>
+            </div>
+            <br />
+            <input type="button" value="Iniciar Sesión" />
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&#169; Vacaciones Fáciles S.A</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Vacaciones Fáciles</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Práctica de HTML" />
+    <meta name="author" content="Samuel Fernández" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <link rel="shortcut icon" href="./assets/plane.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <details>
+          <summary>Navegación</summary>
+          <ul>
+            <li>Vuelos.</li>
+            <li><a href="./pages/alojamientos.html">Alojamiento.</a></li>
+            <li><a href="./pages/autos.html">Autos.</a></li>
+            <li><a href="./pages/login.html">Iniciar Sesión.</a></li>
+          </ul>
+        </details>
+      </nav>
+      <hr />
+      <figure>
+        <figcaption><h1>Vacaciones Fáciles</h1></figcaption>
+        <img src="./assets/travel.jpg" alt="Vacaciones" width="700" />
+      </figure>
+      <br />
+      <hr />
+    </header>
+    <main>
+      <section>
+        <form>
+          <h2>Encontrar tu Vuelo Perfecto</h2>
+          <div>
+            <label for="partida">Origen:</label>
+            <input
+              type="text"
+              id="partida"
+              name="start"
+              value="San Miguel de Tucumán"
+              readonly
+            />
+            <label for="destino">Destino:</label>
+            <select name="destiny" id="destino">
+              <option>Los Angeles, EE. UU</option>
+              <option>Madrid, España</option>
+              <option>Moscú, Rusia</option>
+              <option>Cancún, Mexico</option>
+              <option>Londres, Reino Unido</option>
+            </select>
+          </div>
+          <br />
+          <div>
+            <fieldset>
+              <legend>Fechas</legend>
+              <label for="fecha-inicio">Salida</label>
+              <input
+                type="date"
+                name="starting-date"
+                id="fecha-inicio"
+                min="2025-05-30"
+              />
+              <label for="return-date">Vuelta</label>
+              <input
+                type="date"
+                name="return-date"
+                id="fecha-vuelta"
+                max="2026-01-01"
+              />
+            </fieldset>
+          </div>
+          <br />
+          <div>
+            <fieldset>
+              <legend>Habitaciones</legend>
+              <label for="camas">
+                <img src="./assets/bed.png" alt="Camas" width="20" />
+              </label>
+              <input type="number" name="beds" id="camas" min="1" max="4" />
+              <label for="personas"
+                ><img src="./assets/person.png" alt="Personas" width="25"
+              /></label>
+              <input
+                type="number"
+                name="people"
+                id="personas"
+                min="1"
+                max="6"
+              />
+            </fieldset>
+          </div>
+          <br />
+          <input type="button" value="Buscar" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&#169; Vacaciones Fáciles S.A / Samuel Fernández, RollingCode</p>
+    </footer>
+  </body>
+</html>

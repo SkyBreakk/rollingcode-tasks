@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.robot {
+  margin: 0 auto;
+  width: 80%;
+  min-height: 800px;
+}
+
+.cabeza {
+  width: 200px;
+  height: 200px;
+
+  /* margin: 0 auto; */
+  position: relative;
+  overflow: hidden;
+  left: 263px;
+}
+.cabeza span {
+  position: absolute;
+  font-size: 150px;
+}
+
+.cuerpo {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: #605d5d;
+  border-radius: 5px;
+  left: 215px;
+  top: -20px;
+}
+
+.cuerpo span {
+  font-size: 220px;
+  position: relative;
+  top: -27px;
+}
+.brazo-izq {
+  border-radius: 5px;
+  position: relative;
+  width: 80px;
+  height: 250px;
+  bottom: 295px;
+  left: 135px;
+  background-color: #6b6a6a;
+}
+
+.brazo-izq span {
+  font-size: 80px;
+  position: relative;
+  top: 227px;
+  left: -14px;
+}
+
+.brazo-der {
+  border-radius: 5px;
+  position: relative;
+  width: 80px;
+  height: 250px;
+  bottom: 546px;
+  left: 515px;
+  background-color: #6b6a6a;
+}
+
+.brazo-der span {
+  font-size: 80px;
+  position: relative;
+  top: 227px;
+  left: -14px;
+}
+
+.pierna-der {
+  position: relative;
+  border-radius: 5px;
+
+  width: 80px;
+  height: 250px;
+  bottom: 770px;
+  left: 400px;
+  background-color: #6b6a6a;
+}
+.pierna-der span {
+  font-size: 100px;
+  position: relative;
+  top: 202px;
+}
+
+.pierna-izq {
+  position: relative;
+  border-radius: 5px;
+
+  width: 80px;
+  height: 250px;
+  bottom: 520px;
+  left: 250px;
+  background-color: #6b6a6a;
+}
+.pierna-izq span {
+  font-size: 100px;
+  position: relative;
+  top: 202px;
+}

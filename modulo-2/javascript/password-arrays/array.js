@@ -7,6 +7,7 @@ let pilotosF1 = [
   "Pérez",
   "Lewis Hamilton",
 ];
+let indice;
 
 let pilotosCopia = pilotosF1.slice();
 let pilotosAlf = pilotosCopia.sort();
@@ -28,7 +29,8 @@ for (let i = 0; i < pilotosF1.length; i++) {
   console.log(`${i + 1} - ${pilotosF1[i]}`);
 }
 
-pilotosF1.splice(6, 1);
+indice = pilotosF1.indexOf("Lewis Hamilton");
+pilotosF1.splice(indice, 1);
 pilotosF1.unshift("Lewis Hamilton");
 console.log("");
 console.log("Lewis Hamilton sube a 1er puesto");
@@ -37,7 +39,8 @@ for (let i = 0; i < pilotosF1.length; i++) {
   console.log(`${i + 1} - ${pilotosF1[i]}`);
 }
 
-pilotosF1.splice(2, 1);
+indice = pilotosF1.indexOf("Russel");
+pilotosF1.splice(indice, 1);
 pilotosF1.splice(5, 0, "Russel");
 console.log("");
 console.log("Russel baja al 6to puesto");
@@ -46,7 +49,8 @@ for (let i = 0; i < pilotosF1.length; i++) {
   console.log(`${i + 1} - ${pilotosF1[i]}`);
 }
 
-pilotosF1.splice(1, 1);
+indice = pilotosF1.indexOf("Carlos Sainz");
+pilotosF1.splice(indice, 1);
 console.log("");
 console.log(
   "Carlos Sainz se tendrá que retirar de la carrera por desperfectos"
@@ -56,8 +60,10 @@ for (let i = 0; i < pilotosF1.length; i++) {
   console.log(`${i + 1} - ${pilotosF1[i]}`);
 }
 
-pilotosF1.splice(3, 1);
-pilotosF1.splice(1, 1, "Fernando Alonso");
+indice = pilotosF1.indexOf("Fernando Alonso");
+pilotosF1.splice(indice, 1);
+indice = pilotosF1.indexOf("Gabriel Bortoleto");
+pilotosF1.splice(indice, 1, "Fernando Alonso");
 console.log("");
 console.log(
   "Fernando Alonso sube a 2do puesto rápidamente y saca de la carrera a Gabriel Bortoleto"
@@ -67,8 +73,9 @@ for (let i = 0; i < pilotosF1.length; i++) {
   console.log(`${i + 1} - ${pilotosF1[i]}`);
 }
 
+indice = pilotosF1.indexOf("Pérez");
+pilotosF1.splice(indice, 1);
 pilotosF1.push("Pérez");
-pilotosF1.splice(4, 1);
 console.log("");
 console.log("Pérez se retrasó en boxes y quedó en último lugar");
 console.log("================");

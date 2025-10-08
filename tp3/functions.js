@@ -59,7 +59,7 @@ const calcularPerimetro = (
 //7 - Tablas de multiplicar
 
 const calcularTablas = function () {
-  let tabla = prompt("Ingrese la tabla que quiera ver:");
+  let tabla = Number(prompt("Ingrese la tabla que quiera ver:"));
 
   if (isNaN(tabla) || tabla === null) {
     console.log("Ingrese un número valido");

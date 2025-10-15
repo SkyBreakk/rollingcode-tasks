@@ -10,11 +10,11 @@ function addToDisplay(button) {
 }
 
 function calculateOperation() {
+  display.value = display.value.replaceAll("x", "*");
+
   try {
-    //Si la operación es valida
     display.value = eval(display.value);
-  } catch {
-    //Si la operación suelta error
+  } catch (error) {
     display.value = "ERROR";
   }
 }
